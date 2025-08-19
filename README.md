@@ -10,5 +10,13 @@ Os nomes inseridos serão exibidos em uma lista visível na página, e ao finali
 - Visualizar a lista: Os nomes inseridos aparecerão em uma lista abaixo do campo de entrada.
 - Sorteio aleatório: Ao clicar no botão "Sortear Amigo", um nome da lista será selecionado aleatoriamente e exibido na página.
 
+<div style = "display: inline-block"> <br/> </div>
+
+## Tecnologias Utilizadas:
+- JavaScript
+- CSS
+- HTML
+<div style = "display: inline-block"> <br/> </div>
+
 
 
