@@ -15,5 +15,32 @@ de forma aleatória, exibindo o resultado na tela.
 */
 
 
-//Array para armanezar os amigos
+// Array para armanezar os amigos
 let amigos = [];
+
+// Função para adicionar amigos
+function adicionarAmigo() {
+    const input = document.getElementById("amigo"); // Pega o input do campo de texto
+    const nome = input.value.trim(); // Captura o valor digitado e remove espaços extras
+
+    // console.log("Valor do input:", nome); // Mostra o valor digitado no console
+
+
+    // Validação
+    if (nome === "") {
+        alert("Por favor, insira um nome.")
+        // console.log("Nenhum nome foi digitado!"); // Log caso campo vazio
+        return;
+    }
+
+    amigos.push(nome);
+    // console.log("Array de amigos atualizado:", amigos); // Mostra o array completo no console
+
+
+    // Atualiza lista de amigos na tela
+    atualizarLista();
+
+    // Limpa campo
+    input.value = "";
+    input.focus();
+}
