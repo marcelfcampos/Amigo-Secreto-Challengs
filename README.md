@@ -12,6 +12,20 @@ Os nomes inseridos serão exibidos em uma lista visível na página, e ao finali
 
 <div style = "display: inline-block"> <br/> </div>
 
+## Escopo do Projeto:
+
+1) Criar um array para armanezar os nomes dos amigos
+
+2) Implementar Funções:
+    - adicionarAmigo() → adiciona um nome digitado ao array e exibe na tela.
+
+    - atualizarLista() → mantém a lista de nomes sempre atualizada.
+    
+    - sortearAmigo() → sorteia aleatoriamente um amigo da lista e mostra o resultado.
+
+
+
+
 ## Tecnologias Utilizadas:
 - JavaScript
 - CSS
