@@ -20,27 +20,41 @@ let amigos = [];
 
 // Função para adicionar amigos
 function adicionarAmigo() {
-    const input = document.getElementById("amigo"); // Pega o input do campo de texto
-    const nome = input.value.trim(); // Captura o valor digitado e remove espaços extras
+    const input = document.getElementById("amigo"); // Busca o elemento <input> pelo id="amigo"
+    const nome = input.value.trim(); // Captura o valor digitado no input e remove espaços extras no início/fim
 
-    // console.log("Valor do input:", nome); // Mostra o valor digitado no console
-
-
-    // Validação
+    // Valida se o usuário digitou algum nome
     if (nome === "") {
-        alert("Por favor, insira um nome.")
-        // console.log("Nenhum nome foi digitado!"); // Log caso campo vazio
-        return;
+        alert("Por favor, insira um nome."); // Mostra alerta caso o campo esteja vazio
+        return; // Interrompe a execução da função se o nome estiver vazio
     }
 
+    // Adiciona o nome digitado ao array de amigos
     amigos.push(nome);
-    // console.log("Array de amigos atualizado:", amigos); // Mostra o array completo no console
-
 
     // Atualiza lista de amigos na tela
     atualizarLista();
 
-    // Limpa campo
+
+    // Limpa o campo de input após adicionar o nome
     input.value = "";
+    // Coloca o cursor de volta no campo para facilitar a digitação do próximo nome
     input.focus();
+
 }
+
+// Função para atualizar a lista visível na tela
+function atualizarLista() {
+    const lista = document.getElementById("listaAmigos"); // Busca o elemento <ul> com id="listaAmigos"
+    lista.innerHTML = "";  // Limpa a lista para não duplicar nomes
+
+    // Percorre o array 'amigos' e cria um <li> para cada nome
+    for (let i = 0; i < amigos.length; i++) {
+        const item = document.createElement("li"); // Cria um elemento <li>
+        item.textContent = amigos[i];              // Define o texto do <li> com o nome do amigo
+        lista.appendChild(item);                   // Adiciona o <li> dentro da <ul>
+    }
+}
+
+
+

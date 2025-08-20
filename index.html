@@ -25,11 +25,13 @@
             <div class="input-wrapper">
                 <!-- id="amigo" -> identificador único para o campo de nome -->
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-
+                <!-- Botão que chama a função adicionarAmigo() para incluir o nome digitado na lista -->
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
 
+            <!-- Lista onde serão exibidos os amigos adicionados -->
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <!-- Lista usada para mostrar os resultados (sorteio ou mensagens ao usuário) -->
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
