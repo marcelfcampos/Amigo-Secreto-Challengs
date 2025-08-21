@@ -45,7 +45,7 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 
 #### 2. Implementar Funções:
 
-**2.1 - Implementa uma função para adicionar amigos**
+**2.1 - Implementar uma função para adicionar amigos**
 
 - Descrição
 
@@ -65,7 +65,7 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 
   ***
 
-**2.2 - Implementa uma função para atualizar a lista de amigos**
+**2.2 - Implementar uma função para atualizar a lista de amigos**
 
 - Descrição
 
@@ -83,21 +83,22 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 
   ***
 
-**2.3 - Implementa uma função para atualizar a lista de amigos**
+**2.3 - Implementar uma função para sortear os amigos**
 
 - Descrição:
 
-  - Crie uma função que percorra o array amigos e adicione cada nome como um elemento li dentro de uma lista HTML. Use innerHTML para limpar a lista antes de adicionar novos elementos.
+  - Escreva uma função que selecione aleatoriamente um dos nomes armazenados no array amigos.
+  - Use Math.random() e Math.floor() para obter um índice aleatório.
 
   - Tarefas específicas:
 
-           - Obter o elemento da lista: Utilize document.getElementById() ou document.querySelector() para selecionar a lista onde os amigos serão exibidos.
+           - Validar que há amigos disponíveis: Antes de sortear, verificar se o array amigos não está vazio.
 
-           - Limpar a lista existente: Defina lista.innerHTML = "" para garantir que não haja duplicados ao atualizar.
+           - Gerar um índice aleatório: Usar Math.random() e Math.floor() para selecionar um índice aleatório do array.
 
-           - Percorrer o array: Use um loop for para percorrer o array amigos e criar elementos de lista (<li>) para cada nome.
+           - Obter o nome sorteado: Utilizar o índice aleatório para acessar o nome correspondente no array.
 
-           - Adicionar elementos à lista: Para cada amigo, crie um novo elemento de lista.
+           - Mostrar o resultado: Atualizar o conteúdo do elemento de resultado usando document.getElementById() e innerHTML para exibir o amigo sorteado.
 
 ## Objetivo do Desafio
 
