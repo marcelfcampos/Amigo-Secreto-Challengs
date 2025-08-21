@@ -35,25 +35,47 @@ function adicionarAmigo() {
     // Atualiza lista de amigos na tela
     atualizarLista();
 
-
     // Limpa o campo de input após adicionar o nome
     input.value = "";
     // Coloca o cursor de volta no campo para facilitar a digitação do próximo nome
     input.focus();
-
 }
 
-// Função para atualizar a lista visível na tela
+// Função para atualizar a lista de amigos
 function atualizarLista() {
     const lista = document.getElementById("listaAmigos"); // Busca o elemento <ul> com id="listaAmigos"
     lista.innerHTML = "";  // Limpa a lista para não duplicar nomes
 
-    // Percorre o array 'amigos' e cria um <li> para cada nome
-    for (let i = 0; i < amigos.length; i++) {
+
+    for (let i = 0; i < amigos.length; i++) {      //Percorre todos os elementos do array "amigos" do índice 0 até o último e cria um <li> para cada nome
         const item = document.createElement("li"); // Cria um elemento <li>
         item.textContent = amigos[i];              // Define o texto do <li> com o nome do amigo
         lista.appendChild(item);                   // Adiciona o <li> dentro da <ul>
     }
+}
+
+// Função para sortear amigo
+function sortearAmigo() {
+    const resultado = document.getElementById("resultado"); // Seleciona o elemento <ul> com id="resultado"  
+    resultado.innerHTML = "";                               // Limpa o conteúdo da lista de resultados antes de mostrar o novo sorteio  
+
+    // Verificar se há amigos cadastrados
+    if (amigos.length === 0) { // Verifica se o array de amigos está vazio  
+        alert("Adicione pelo menos um amigo antes de sortear!"); // Alerta o usuário que não é possível sortear sem nomes  
+        return; // Interrompe a execução da função se não houver amigos  
+    }
+
+
+    // Gerar índice aleatório
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length); // Gera um índice inteiro aleatório entre 0 e (amigos.length - 1)
+
+
+    // Obter o nome sorteado
+    const amigoSorteado = amigos[indiceAleatorio]; // Seleciona o amigo correspondente ao índice sorteado no array
+
+
+    // Mostrar resultado
+    resultado.innerHTML = `<li>O amigo secreto sorteado é: <strong>${amigoSorteado}</strong></li>`; // Exibe o nome do amigo sorteado dentro da lista no HTML
 }
 
 
