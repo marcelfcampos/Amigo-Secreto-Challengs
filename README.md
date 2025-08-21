@@ -10,6 +10,7 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 ![Jogo do Amigo Secreto](assets/jogo-amigo-secreto.png)
 
 <div style = "display: inline-block"> <br/> </div>
+
 ## Funcionalidades
 
 - **Adicionar nomes:** Usuários podem digitar o nome de amigos em um campo de texto e incluí-los na lista.
@@ -28,7 +29,7 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 
 ## Demonstração
 
-![App funcionando](./Captura%20de%20Tela%202025-08-20%20às%2010.02.29.png)
+[👉 Acesse o app funcionando aqui](https://amigo-secreto-challengs.vercel.app/)
 
 ## Escopo do Projeto
 
@@ -36,11 +37,11 @@ O usuário pode adicionar nomes de amigos em uma lista e, em seguida, realizar o
 
 2. Implementar Funções:
 
-   - adicionarAmigo() → adiciona um nome digitado ao array e exibe na tela.
+   - adicionarAmigo( ) → adiciona um nome digitado ao array e exibe na tela.
 
-   - atualizarLista() → mantém a lista de nomes sempre atualizada.
+   - atualizarLista( ) → mantém a lista de nomes sempre atualizada.
 
-   - sortearAmigo() → sorteia aleatoriamente um amigo da lista e mostra o resultado.
+   - sortearAmigo( ) → sorteia aleatoriamente um amigo da lista e mostra o resultado.
 
 ## Objetivo do Desafio
 
@@ -60,7 +61,8 @@ O objetivo principal deste projeto é fortalecer a lógica de programação, pra
 - CSS
 - HTML
 
-## Autor
+## Sobre o Projeto
 
-Marcel Ferreira Campos<br/>
-Projeto desenvolvido como parte de um challenge prático de lógica de programação.
+Projeto desenvolvido como parte de um challenge prático de **lógica de programação** do programa **ONE - Oracle Next Education** em parceria com a **Alura**.
+
+Autor: **Marcel Ferreira Campos**
